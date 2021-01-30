@@ -2,7 +2,6 @@
 
 namespace Stanfortonski\Laraveltwofactor\Controllers;
 
-use Illuminate\Routing\Controller;
 use Stanfortonski\Laraveltwofactor\Notifications\TwoFactorCode;
 use Illuminate\Http\Request;
 

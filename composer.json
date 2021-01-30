@@ -4,10 +4,8 @@
     "keywords": [
         "laravel",
         "twofactor",
-        "two-factor",
         "auth",
-        "authentication",
-        "two-factor authentication"
+        "authentication"
     ],
     "license": "MIT",
     "authors": [

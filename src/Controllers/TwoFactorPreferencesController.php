@@ -2,8 +2,6 @@
 
 namespace Stanfortonski\Laraveltwofactor\Controllers;
 
-use Illuminate\Routing\Controller;
-
 class TwoFactorController extends Controller
 {
     public function set()
