@@ -2,7 +2,7 @@
 
 namespace Stanfortonski\Laraveltwofactor\Controllers;
 
-class TwoFactorController extends Controller
+class TwoFactorPreferencesController extends Controller
 {
     public function set()
     {
