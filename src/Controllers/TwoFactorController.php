@@ -34,7 +34,7 @@ class TwoFactorController extends Controller
         if (!empty($user->two_factor_code)){
             $user->generateTwoFactorCode();
             $user->notify(new TwoFactorCode());
-            return redirect()->back()->withSuccess(__('twofactor.send_again'));
+            return redirect()->route('twofactor.verify.index')->withSuccess(__('twofactor.send_again'));
         }
         return redirect()->route(config('twofactor.routes.return'));
     }

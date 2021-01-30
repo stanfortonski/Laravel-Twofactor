@@ -25,6 +25,7 @@ return [
         'unset' => 'Logowanie dwuetapowe zostało wyłączone.'
     ],
 
+    //View translate.
     'view' => [
         'header' => 'Weryfikacja dwuetapowa',
         'info' => 'Otrzymasz wiadomość email zawierającą kod weryfikacyjny.',

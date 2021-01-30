@@ -25,7 +25,14 @@ return [
         'unset' => 'Two-factor auth is disabled.'
     ],
 
+    //View translate.
     'view' => [
-
+        'header' => 'Two-factor authentication',
+        'info' => 'You will receive an email containing a verification code.',
+        'info_if' => 'If you haven\'t received the code',
+        'link' => 'click here',
+        'code' => 'Verification code',
+        'logout' => 'Logout',
+        'verify' => 'Verify'
     ]
 ];
