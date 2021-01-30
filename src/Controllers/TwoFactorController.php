@@ -2,8 +2,8 @@
 
 namespace Stanfortonski\Laraveltwofactor\Controllers;
 
-use Stanfortonski\Laraveltwofactor\Notifications\TwoFactorCode;
 use Illuminate\Http\Request;
+use Stanfortonski\Laraveltwofactor\TwoFactor;
 
 class TwoFactorController extends Controller
 {
@@ -32,8 +32,7 @@ class TwoFactorController extends Controller
     {
         $user = auth()->user();
         if (!empty($user->two_factor_code)){
-            $user->generateTwoFactorCode();
-            $user->notify(new TwoFactorCode());
+            TwoFactor::sendCode($user);
             return redirect()->route('twofactor.verify.index')->withSuccess(__('twofactor::twofactor.send_again'));
         }
         return redirect()->route(config('twofactor.routes.return'));
