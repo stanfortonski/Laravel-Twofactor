@@ -20,7 +20,7 @@ class TwoFactor
             if ($user->two_factor_expires_at->lt(now())){
                 $user->resetTwoFactorCode();
                 auth()->logout();
-                return redirect()->route(config('twofactor.routes.login'))->withError(__('twofactor.expire_info'));
+                return redirect()->route(config('twofactor.routes.login'))->withError(__('twofactor::twofactor.expire_info'));
             }
 
             if (!$request->is('verify*')){

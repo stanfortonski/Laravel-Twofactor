@@ -29,9 +29,9 @@ class TwoFactorCode extends Notification
      */
     public function toMail($notifiable)
     {
-        return (new MailMessage)->subject(__('twofactor.notification.subject'))
-                                ->line(__('twofactor.notification.main_line').': '.$notifiable->two_factor_code)
-                                ->action(__('twofactor.notification.action'), route('twofactor.verify.index'))
-                                ->line(__('twofactor.notification.expire_in').' '.config('twofactor.expire_duration').' '.__('twofactor.notification.minutes').'.');
+        return (new MailMessage)->subject(__('twofactor::twofactor.notification.subject'))
+                                ->line(__('twofactor::twofactor.notification.main_line').': '.$notifiable->two_factor_code)
+                                ->action(__('twofactor::twofactor.notification.action'), route('twofactor.verify.index'))
+                                ->line(__('twofactor::twofactor.notification.expire_in').' '.config('twofactor.expire_duration').' '.__('twofactor::twofactor.notification.minutes').'.');
     }
 }

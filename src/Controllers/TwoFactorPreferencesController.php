@@ -10,7 +10,7 @@ class TwoFactorPreferencesController extends Controller
         $user->enable_two_factor = true;
         $user->update();
 
-        return redirect()->back()->withSuccess(__('twofactor.preferences.set'));
+        return redirect()->back()->withSuccess(__('twofactor::twofactor.preferences.set'));
     }
 
     public function unset()
@@ -19,6 +19,6 @@ class TwoFactorPreferencesController extends Controller
         $user->enable_two_factor = false;
         $user->update();
 
-        return redirect()->back()->withSuccess(__('twofactor.preferences.unset'));
+        return redirect()->back()->withSuccess(__('twofactor::twofactor.preferences.unset'));
     }
 }
