@@ -1,12 +1,13 @@
 {
-    "name": "stanfortonski/laravel-t",
+    "name": "stanfortonski/laravel-twofactor",
     "description": "Users Roles for Laravel Applications.",
     "keywords": [
         "laravel",
         "twofactor",
         "two-factor",
         "auth",
-        "authentication"
+        "authentication",
+        "two-factor authentication"
     ],
     "license": "MIT",
     "authors": [
