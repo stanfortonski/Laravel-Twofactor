@@ -1,2 +1,2 @@
 # Laravel-Twofactor
-Two-factor authentication package for Laravel 8.x
+Two-factor authentication package for Laravel 7.x, 8.x

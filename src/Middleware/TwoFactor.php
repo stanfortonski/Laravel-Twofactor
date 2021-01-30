@@ -1,6 +1,6 @@
 <?php
 
-namespace Stanfortonski\Laravelroles\Middleware;
+namespace Stanfortonski\Laraveltwofactor\Middleware;
 
 use Closure;
 

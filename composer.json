@@ -1,10 +1,12 @@
 {
-    "name": "stanfortonski/laravel-roles",
+    "name": "stanfortonski/laravel-t",
     "description": "Users Roles for Laravel Applications.",
     "keywords": [
         "laravel",
-        "roles",
-        "users"
+        "twofactor",
+        "two-factor",
+        "auth",
+        "authentication"
     ],
     "license": "MIT",
     "authors": [
@@ -20,13 +22,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Stanfortonski\\Laravelroles\\": "src/"
+            "Stanfortonski\\Laraveltwofactor\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Stanfortonski\\Laravelroles\\ServiceProvider"
+                "Stanfortonski\\Laraveltwofactor\\ServiceProvider"
             ]
         }
     }
