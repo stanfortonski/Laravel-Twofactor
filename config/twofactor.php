@@ -7,14 +7,12 @@ return [
     //Duration to expired verification code.
     'expire_duration' => 15,
 
-    //Middleware for twofactor auth.
-    'middleware' => ['auth', 'twofactor'],
+    //Middleware group options
+    'middleware' => ['web', 'auth', 'twofactor'],
+    'domain' => null,
 
     //Middleware allow for preferences.
     'allow_preferences' => true,
-    
-    //Middleware for routes preferences.
-    'middleware_preferences' => ['auth', 'twofactor'],
 
     'routes' => [
         //Name of route. This is route after expired code.
