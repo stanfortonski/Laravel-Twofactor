@@ -1,6 +1,6 @@
 {
     "name": "stanfortonski/laravel-twofactor",
-    "description": "Users Roles for Laravel Applications.",
+    "description": "Two-factor authentication for Laravel 7.x, 8.x via e-mail.",
     "keywords": [
         "laravel",
         "twofactor",
