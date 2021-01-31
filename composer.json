@@ -1,12 +1,18 @@
 {
     "name": "stanfortonski/laravel-twofactor",
-    "description": "Two-factor authentication for Laravel 7.x, 8.x via e-mail.",
+    "description": "Two-factor authentication for Laravel 7.x and 8.x via e-mail.",
     "keywords": [
         "laravel",
+        "Laravel 7",
+        "Laravel 8",
         "twofactor",
         "auth",
+        "e-mail",
         "authentication",
-        "2fa"
+        "2fa",
+        "laravel-package",
+        "laravel-plugin",
+        "laravel-module"
     ],
     "license": "MIT",
     "authors": [
