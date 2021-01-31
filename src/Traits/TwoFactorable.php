@@ -24,9 +24,15 @@ trait TwoFactorable
 
     public function startTwoFactor()
     {
-        if ($this->enabled_two_factor){
+        if (config('twofactor.preferences.allow')){
+            if ($this->enabled_two_factor){
+                $this->generateTwoFactorCode();
+                $this->notify(new TwoFactorCode());
+            }
+        }
+        else {
             $this->generateTwoFactorCode();
-            $this->notify(new TwoFactorCode());
+            $this->notify(new TwoFactorCode()); 
         }
     }
 }
