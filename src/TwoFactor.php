@@ -8,7 +8,7 @@ class TwoFactor
 {
     static public function sendCode($user)
     {
-        if ($user->enable_two_factor){
+        if ($user->enabled_two_factor){
             $user->generateTwoFactorCode();
             $user->notify(new TwoFactorCode());
         }

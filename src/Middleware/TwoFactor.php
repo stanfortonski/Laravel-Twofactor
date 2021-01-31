@@ -16,7 +16,7 @@ class TwoFactor
     public function handle($request, Closure $next)
     {
         $user = auth()->user();
-        if (auth()->check() && $user->enable_two_factor && $user->two_factor_code){
+        if (auth()->check() && $user->enabled_two_factor && $user->two_factor_code){
             if ($user->two_factor_expires_at->lt(now())){
                 $user->resetTwoFactorCode();
                 auth()->logout();

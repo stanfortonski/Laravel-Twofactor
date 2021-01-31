@@ -2,17 +2,22 @@
 
 return [
     //View for enter the code.
-    'view' => 'twofactor::twofactor',
+    'view' => 'twofactor::verify',
     
     //Duration to expired verification code.
     'expire_duration' => 15,
 
-    //Middleware group options
+    //Middleware group options.
     'middleware' => ['web', 'auth', 'twofactor'],
     'domain' => null,
 
-    //Middleware allow for preferences.
-    'allow_preferences' => true,
+    //Preferences settings.
+    'preferences' => [
+        'allow' => true,
+        'view' => 'twofactor::preferences',
+        'middleware' => ['web', 'auth', 'twofactor'],
+        'domain' => null,
+    ],
 
     'routes' => [
         //Name of route. This is route after expired code.

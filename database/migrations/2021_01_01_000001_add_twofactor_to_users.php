@@ -16,7 +16,7 @@ class AddTwofactorToUsers extends Migration
         Schema::table('users', function (Blueprint $table){
             $table->string('two_factor_code')->nullable();
             $table->dateTime('two_factor_expires_at')->nullable();
-            $table->boolean('enable_two_factor')->default(false);
+            $table->boolean('enabled_two_factor')->default(false);
         });
     }
 
@@ -30,7 +30,7 @@ class AddTwofactorToUsers extends Migration
         Schema::table('users', function (Blueprint $table){
             $table->dropColumn('two_factor_code');
             $table->dropColumn('two_factor_expires_at');
-            $table->dropColumn('enable_two_factor');
+            $table->dropColumn('enabled_two_factor');
         });
     }
 }

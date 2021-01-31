@@ -25,7 +25,7 @@ return [
         'unset' => 'Two-factor auth is disabled.'
     ],
 
-    //View translate.
+    //Verify view.
     'view' => [
         'header' => 'Two-factor authentication',
         'info' => 'You will receive an email containing a verification code.',
@@ -34,5 +34,12 @@ return [
         'code' => 'Verification code',
         'logout' => 'Logout',
         'verify' => 'Verify'
+    ],
+
+    //Preferences view.
+    'view_preferences' => [
+        'header' => 'Two-factor authentication - preferences',
+        'enable' => 'Enable 2FA',
+        'disable' => 'Disable 2FA'
     ]
 ];

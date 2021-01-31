@@ -5,7 +5,8 @@
         "laravel",
         "twofactor",
         "auth",
-        "authentication"
+        "authentication",
+        "2fa"
     ],
     "license": "MIT",
     "authors": [

@@ -25,7 +25,7 @@ return [
         'unset' => 'Logowanie dwuetapowe zostało wyłączone.'
     ],
 
-    //View translate.
+    //Verify view.
     'view' => [
         'header' => 'Weryfikacja dwuetapowa',
         'info' => 'Otrzymasz wiadomość email zawierającą kod weryfikacyjny.',
@@ -34,5 +34,12 @@ return [
         'code' => 'Kod weryfikacyjny',
         'logout' => 'Wyloguj',
         'verify' => 'Weryfikuj'
+    ],
+
+    //Preferences view.
+    'view_preferences' => [
+        'header' => 'Weryfikacja dwuetapowa - ustawienia',
+        'enable' => 'Włącz 2FA',
+        'disable' => 'Wyłącz 2FA'
     ]
 ];

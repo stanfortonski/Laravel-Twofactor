@@ -1,4 +1,4 @@
-@extends('layouts.auth')
+@extends('layouts.app')
 
 @section('title', __('twofactor::twofactor.view.header'))
 
