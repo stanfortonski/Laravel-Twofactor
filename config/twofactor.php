@@ -1,12 +1,12 @@
 <?php
 
 return [
-    //View for enter the code.
-    'view' => 'twofactor::verify',
-    
     //Duration to expired verification code.
     'expire_duration' => 15,
 
+    //View for enter the code.
+    'view' => 'twofactor::verify',
+    
     //Middleware group options.
     'middleware' => ['web', 'auth', 'twofactor'],
     'domain' => null,
@@ -16,7 +16,7 @@ return [
         'allow' => true,
         'view' => 'twofactor::preferences',
         'middleware' => ['web', 'auth', 'twofactor'],
-        'domain' => null,
+        'domain' => null
     ],
 
     'routes' => [

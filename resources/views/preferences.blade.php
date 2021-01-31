@@ -7,10 +7,10 @@
     <div class="col-md-8">
         <div class="card-group">
             <div class="card">
-                <div class="card-header text-center h3">
+                <div class="card-header">
                     {{ __('twofactor::twofactor.view_preferences.header') }}
                 </div>
-                <div class="card-body">
+                <div class="card-body text-center">
                     @if ($user->enabled_two_factor)
                         <form method="POST" action="{{ route('twofactor.preferences.unset') }}">
                             @csrf
@@ -34,4 +34,3 @@
     </div>
 </div>
 @endsection
-
