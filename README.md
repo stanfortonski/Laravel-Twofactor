@@ -20,6 +20,7 @@ protected $routeMiddleware = [
     'twofactor' => \Stanfortonski\Laraveltwofactor\Middleware\TwoFactor::class
 ];
 ```
+5. Use \Stanfortonski\Laraveltwofactor\Traits\TwoFactorable trait in User class with \Illuminate\Notifications\Notifiable. Snippet: `use Notifiable, TwoFactorable;`
 4. You have to publish config file twofactor.php. Run command: `php artisan vendor:publish --provider="Stanfortonski\Laraveltwofactor\ServiceProvider"`.
 5. Run `php artisan migrate`.
 6. Add line `$user->startTwoFactor()` in your login process. For example in Laravel/ui add this line in Auth\LoginController@authenticated method before redirect.
