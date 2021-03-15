@@ -24,7 +24,7 @@ class TwoFactorController extends Controller
             $user->resetTwoFactorCode();
             return redirect()->route(config('twofactor.routes.successful'));
         }
-        return redirect()->back()->withError(__('twofactor::twofactor.routes.error'));
+        return redirect()->back()->withError(__('twofactor::twofactor.error'));
     }
 
     public function resend()
